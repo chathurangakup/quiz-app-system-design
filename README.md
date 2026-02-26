@@ -56,9 +56,16 @@ Users complete quizzes → earn rewards → request withdrawals → admin verifi
 
 6. Fraud Detection Flags
 
-KYC Approval System
+7. KYC Approval System
 
 🌐 Admin Portal (Next.js)
+
+<img width="512" height="350" alt="Screenshot 2026-02-26 at 21 57 28" src="https://github.com/user-attachments/assets/1c7bc5ea-2479-4b50-9a6f-d9beb0895f89" />
+<img width="512" height="350" alt="Screenshot 2026-02-26 at 21 58 24" src="https://github.com/user-attachments/assets/910cd3fc-4356-4fcf-804f-80de54816e31" />
+<img width="512" height="350" alt="Screenshot 2026-02-26 at 21 57 59" src="https://github.com/user-attachments/assets/eca9e0d5-0be1-401b-9cf6-a110f0ad2673" />
+<img width="512" height="350" alt="Screenshot 2026-02-26 at 21 58 40" src="https://github.com/user-attachments/assets/f37425de-b96b-4ee2-aa03-6a9d88d5146a" />
+<img width="512" height="350" alt="Screenshot 2026-02-26 at 21 58 52" src="https://github.com/user-attachments/assets/f1073019-ba55-420a-acbd-8b03dd84aa18" />
+<img width="512" height="350" alt="Screenshot 2026-02-26 at 21 58 08" src="https://github.com/user-attachments/assets/88f16de4-d7d8-4c58-9606-e3b3304876d2" />
 
 1. Create Quizzes
 
@@ -69,3 +76,61 @@ KYC Approval System
 4. Monitor Wallet Transactions
 
 5. Detect Suspicious Activity
+
+
+🧱 Tech Stack
+Layer	Technology
+
+Mobile App -	Expo (React Native)
+
+Admin Portal -	Next.js
+
+Backend - Node.js + Express.js
+
+Database -	PostgreSQL
+
+Authentication - JWT
+
+ORM - Raw SQL (pg)
+
+
+
+⚙️ Backend Setup (Local)
+1️⃣ Clone Repo
+
+git clone https://github.com/your-repo/quiz-app-backend.git
+cd quiz-app-backend
+
+2️⃣ Install Dependencies
+
+npm install
+
+3️⃣ Setup PostgreSQL
+
+Create Database:
+
+CREATE DATABASE quizapp;
+
+Update .env
+
+PORT=4000
+DB_HOST=localhost
+DB_PORT=5432
+DB_USER=postgres
+DB_PASSWORD=yourpassword
+DB_NAME=quizapp
+JWT_SECRET=yoursecret
+
+4️⃣ Run Migrations
+
+Run all SQL schema files from /database
+
+5️⃣ Start Server
+
+npm run dev
+
+Backend runs on:
+
+http://localhost:4000
+
+
